@@ -33,22 +33,22 @@ const DAYS = [
       },
       { id: "skill", name: "SKILL", tag: "DU + HS Walk", duration: "10 min", color: COLORS.skill,
         exercises: [
-          { id:"s1", name:"Double Unders — drill progressivo", detail:"5 min. Sett 1-2: EMOM 5min → 5 DU attempts + 20 single unders, focus polsi rilassati e salto basso. Sett 3-4: EMOM 5min → max unbroken DU (cap 15), se rompi <5 fai 3 tentativi singoli. Sett 5-6: Every 30s x10 → max unbroken, mai rompere sotto 10.", loggable:true, logFields:["reps","note"] },
-          { id:"s2", name:"Handstand Walk — progressione", detail:"5 min. Sett 1-2: Nose-to-wall hold 3x30s + shoulder taps al muro 3x10/lato + weight shift (solleva 1 mano 2cm) 3x8/lato. Sett 3-4: Kick-up to freestanding hold 5 tentativi x max sec + wall walk-away stacca piedi e fai 2-3 passi x5. Sett 5-6: HS walk attempts, calcia e cammina max distanza 8-10 tentativi, passi corti e choppy, core stretto, glutei contratti, sguardo tra le mani.", loggable:true, logFields:["distanza","note"] },
+          { id:"s1", name:"Double Unders — WEEK 5", detail:"5 min. Every 30s x10 → max unbroken. Target: 20+ unbroken. Se rompi prima di 15, recupera 10s e riparte. Registra il PR del giorno.", loggable:true, logFields:["reps","note"] },
+          { id:"s2", name:"Handstand Walk — WEEK 5", detail:"5 min. HS walk attempts: 8-10 tentativi, push per distanza massima. Passi corti e choppy, core stretto, glutei contratti, sguardo tra le mani. Target: 5+ metri unbroken. Log distanza migliore.", loggable:true, logFields:["distanza","note"] },
         ]
       },
-      { id: "str", name: "STRENGTH", tag: "Tempo Back Squat — 3030", duration: "~28 min (warm-up incluso)", color: COLORS.strength, note: "Tempo 3030: 3s eccentrica, no pausa in basso, 3s concentrica, no pausa in alto. Progressione: +2.5kg ogni 2 settimane se mantieni il tempo.",
+      { id: "str", name: "STRENGTH", tag: "Tempo Back Squat — 3030", duration: "~30 min (warm-up incluso)", color: COLORS.strength, note: "WEEK 5 — PEAK INTENSITY. Sonno 8h28 → readiness ALTA. Tempo 3030 invariato: 3s giù, 3s su. Volume ridotto a 4 set, intensità massima del ciclo. Obiettivo: avvicinare il massimale.",
         exercises: [
-          { id:"m0", name:"Warm-up bilanciere", detail:"8-10 min. Vuoto x8 → 50% (55kg) x5 → 60% (66kg) x3 → 70% (77kg) x2. Ogni set in tempo 3030." },
-          { id:"m1", name:"Set 1 — 5 reps @75%", detail:"82.5 kg. Tempo 3030. Rest 3:00 min dopo il set.", loggable:true, logFields:["peso","reps","note"] },
-          { id:"m2", name:"Set 2 — 4 reps @80%", detail:"88 kg. Tempo 3030. Rest 3:00 min.", loggable:true, logFields:["peso","reps","note"] },
-          { id:"m3", name:"Set 3 — 2-3 reps @82.5%", detail:"91 kg. Tempo 3030. Rest 3:00 min.", loggable:true, logFields:["peso","reps","note"] },
-          { id:"m4", name:"Set 4 — 2-3 reps @85%", detail:"94 kg. Tempo 3030. Se perdi il tempo, non salire di carico.", loggable:true, logFields:["peso","reps","note"] },
+          { id:"m0", name:"Warm-up bilanciere", detail:"10-12 min. Vuoto x8 → 55% (60kg) x5 → 65% (71kg) x3 → 75% (82kg) x2 → 80% (88kg) x1. Ogni set in tempo 3030. Arriva già caldo ai set di lavoro." },
+          { id:"m1", name:"Set 1 — 3 reps @85%", detail:"94 kg. Tempo 3030. Rest 3:30 min. Primo set pesante del ciclo — concentrazione massima.", loggable:true, logFields:["peso","reps","note"] },
+          { id:"m2", name:"Set 2 — 2-3 reps @87.5%", detail:"96 kg. Tempo 3030. Rest 3:30 min. 3 rep se Set 1 era solido, 2 se hai lottato.", loggable:true, logFields:["peso","reps","note"] },
+          { id:"m3", name:"Set 3 — 2 reps @90%", detail:"99 kg. Tempo 3030. Rest 4:00 min. Questo è il vero test della settimana.", loggable:true, logFields:["peso","reps","note"] },
+          { id:"m4", name:"Set 4 — 1-2 reps @92.5% · PEAK", detail:"102 kg. Tempo 3030. Solo se Set 3 perfetto. Questo avvicina il massimale. Rest 4:00 min.", loggable:true, logFields:["peso","reps","note"] },
         ]
       },
-      { id: "cond", name: "CONDITIONING", tag: "Z2 Mixed Modal", duration: "~18 min", color: COLORS.conditioning, note: "Intensità Z2, respirazione nasale. Se non respiri dal naso, stai andando troppo forte.",
+      { id: "cond", name: "CONDITIONING", tag: "Z2 Mixed Modal", duration: "~15 min", color: COLORS.conditioning, note: "Peak week: 3 round (non 4). La bici A/R Great Wave (~50 min, Z1-Z2) è già carico aerobico quotidiano. Respirazione NASALE. Qualità > quantità.",
         exercises: [
-          { id:"c1", name:"3-4 round for quality", detail:"400m Rower @2:00-2:05/500m (easy pace, SPM 22-24) → 12 KB Swing @24kg (anca esplosiva, braccia rilassate) → 8 Box Jump Overs @60cm (step-down OK) → 1:00 rest tra i round. Obiettivo: volume aerobico con movimenti funzionali, non andare in debito.", loggable:true, logFields:["round","note"] },
+          { id:"c1", name:"3 round for quality — Peak Week", detail:"400m Rower @2:00-2:05/500m (SPM 22-24) → 12 KB Swing @24kg → 8 Box Jump Overs @60cm (step-down OK) → 1:00 rest tra i round. Nasale per tutto. Non andare in debito ossigeno.", loggable:true, logFields:["round","note"] },
         ]
       },
       { id: "fs", name: "FUNCTIONAL STRENGTH", tag: "Squat + Estensione Anca", duration: "~12 min", color: COLORS.fs, note: "Scegli 2-3 esercizi dalla lista. Ruota nelle settimane. Respirazione ATTIVA postero-laterale.",
@@ -92,20 +92,20 @@ const DAYS = [
           { id:"s2", name:"HSPU kipping practice", detail:"5 min. Hai 5 strict — ora costruisci il kip. Focus: kick-up, tocca testa a terra, kip esplosivo. 5-8 tentativi singoli poi prova set di 2-3.", loggable:true, logFields:["reps","note"] },
         ]
       },
-      { id:"wl", name:"WEIGHTLIFTING", tag:"Snatch Complex", duration:"~43 min (warm-up incluso)", color:COLORS.weightlifting, note:"Focus: pulizia tecnica, esplosività, posizioni. Adatta il carico per percepire il gesto pulito e fruibile.",
+      { id:"wl", name:"WEIGHTLIFTING", tag:"Snatch Complex", duration:"~43 min (warm-up incluso)", color:COLORS.weightlifting, note:"WEEK 5 PEAK SNATCH — Target 75% = 45kg. Focus: velocità sotto il bilanciere e OHS stabile. Ogni kg si guadagna solo con tecnica pulita. Se il receive è instabile, non salire.",
         exercises: [
           { id:"w0", name:"Warm-up bilanciere vuoto — 2 round", detail:"3 Snatch grip push press + 3 Snatch balance half squat + 3 OHS + 3 Shoulder pull + 3 Hang high pull + 3 Low hang power snatch. ~8 min." },
           { id:"w1", name:"Complex A: SN DL + Hang SQ SN + OHS + SN Balance", detail:"1+1+1+1 dal 40% al 55% 1RM SN (24-33kg) x 5 set progressivi. Rest 1:30-2:00. ~15 min." },
-          { id:"w2", name:"Complex B Set 1 — SQ SN + Hang SQ SN + OHS", detail:"2+1+1 @55% = 33kg. Rest as needed.", loggable:true, logFields:["peso","note"] },
-          { id:"w3", name:"Complex B Set 2", detail:"1+2+1 @60% = 36kg", loggable:true, logFields:["peso","note"] },
-          { id:"w4", name:"Complex B Set 3", detail:"1+1+1 @65% = 39kg", loggable:true, logFields:["peso","note"] },
-          { id:"w5", name:"Complex B Set 4", detail:"1+1+1 @67% = 40kg", loggable:true, logFields:["peso","note"] },
-          { id:"w6", name:"Complex B Set 5", detail:"1+1+1 @70% = 42kg. Non salire se perdi le posizioni.", loggable:true, logFields:["peso","note"] },
+          { id:"w2", name:"Complex B Set 1 — SQ SN + Hang SQ SN + OHS", detail:"2+1+1 @62% = 37kg. Rest 1:30.", loggable:true, logFields:["peso","note"] },
+          { id:"w3", name:"Complex B Set 2", detail:"1+2+1 @67% = 40kg. Rest 1:30.", loggable:true, logFields:["peso","note"] },
+          { id:"w4", name:"Complex B Set 3", detail:"1+1+1 @70% = 42kg. Rest 2:00.", loggable:true, logFields:["peso","note"] },
+          { id:"w5", name:"Complex B Set 4", detail:"1+1+1 @73% = 44kg. Rest 2:00.", loggable:true, logFields:["peso","note"] },
+          { id:"w6", name:"Complex B Set 5 · PEAK", detail:"1+1+1 @75% = 45kg. Solo se 44kg era pulito. Fermati se perdi l'OHS o il receive.", loggable:true, logFields:["peso","note"] },
         ]
       },
-      { id:"gym", name:"GYMNASTICS", tag:"HS + HSPU skill", duration:"~15 min", color:COLORS.gymnastics,
+      { id:"gym", name:"GYMNASTICS", tag:"HS + HSPU skill", duration:"~18 min", color:COLORS.gymnastics,
         exercises: [
-          { id:"g1", name:"3 round for quality", detail:"2-3 Wall Walks (lento, nose-to-wall in alto) + 3-5 Strict Facing Wall HSPU (se ne hai 5 strict, fai 3 per round) + 5-10m HS walk attempt OPPURE shoulder taps al muro 8/lato se non ancora pronto per il walk. Rest 1:30 tra i round.", loggable:true, logFields:["reps","note"] },
+          { id:"g1", name:"4 round for quality — Peak Week", detail:"2 Wall Walks (lento, nose-to-wall) + 3-5 Strict Facing Wall HSPU (o kipping attempts se già solido a 5 strict) + 10-15m HS walk attempt (push per distanza massima, non shoulder taps). Rest 1:30 tra i round. 4 round — picco di volume ginnastica.", loggable:true, logFields:["reps","note"] },
         ]
       },
       { id:"fs", name:"FUNCTIONAL STRENGTH", tag:"Hinge", duration:"~10 min", color:COLORS.fs, note:"Transfer per il pull dello snatch + posterior chain.",
@@ -140,10 +140,10 @@ const DAYS = [
           { id:"s2", name:"HS Walk progression", detail:"5 min. Segui progressione settimanale.", loggable:true, logFields:["distanza"] },
         ]
       },
-      { id:"end", name:"ENDURANCE", tag:"Aerobic Development @Z2", duration:"~38 min", color:COLORS.endurance, note:"Respirazione NASALE. Se non riesci a respirare dal naso, stai andando troppo forte. Alterna Opzione A e B ogni settimana.",
+      { id:"end", name:"ENDURANCE", tag:"Aerobic Development @Z2", duration:"~38 min", color:COLORS.endurance, note:"WEEK 5 — Commuta in bici (~50 min A/R, Z1-Z2) già integrata nel volume. Questa sessione: OPZIONE B (Sport Specific). Respirazione NASALE per tutta la durata. Se esci dalla nasale, rallenta.",
         exercises: [
           { id:"e1", name:"OPZIONE A — Tri-Modal descending", detail:"Set 1: 50 cal Bike Erg (damper 2-3) + 800m Rower @2:00-2:05/500m + 25 cal AirBike → 1:00 rest. Set 2: 40 cal Bike + 600m Row + 20 cal AirBike → 1:00 rest. Set 3: 30 cal Bike + 400m Row + 15 cal AirBike → 2:00 rest. Totale ~35 min.", loggable:true, logFields:["note"] },
-          { id:"e2", name:"OPZIONE B — Sport Specific AMRAP 35 min", detail:"35:00 AMRAP @Z2/RPE 6: 500m SkiErg @nose breathing (2:10-2:20/500m) + 20 KB Swing @24kg + 400m Run (corsa facile) + 20 GHD Sit-ups + 10 Empty Barbell Bradford Press → 1:00 rest b/t rounds.", loggable:true, logFields:["round","note"] },
+          { id:"e2", name:"OPZIONE B — Sport Specific AMRAP 35 min ★ SETTIMANA", detail:"35:00 AMRAP @Z2/RPE 6: 500m SkiErg (2:10-2:15/500m, nasale) + 20 KB Swing @24kg + 400m Run (corsa facile, nasale) + 20 GHD Sit-ups + 10 Empty Barbell Bradford Press → 1:00 rest. Target: 4+ round. Log round completati e qualità respirazione.", loggable:true, logFields:["round","note"] },
         ]
       },
       { id:"fs", name:"FUNCTIONAL STRENGTH", tag:"Core + Piano Frontale", duration:"~12 min", color:COLORS.fs,
@@ -179,20 +179,20 @@ const DAYS = [
           { id:"s2", name:"HSPU kipping o freestanding HS hold", detail:"5 min. Alterna: settimane dispari HSPU kipping attempts, settimane pari freestanding HS hold (kick-up dal muro, mantieni max sec, 6-8 tentativi).", loggable:true, logFields:["reps","note"] },
         ]
       },
-      { id:"str", name:"STRENGTH", tag:"Tempo Bench + Strict Press", duration:"~28 min", color:COLORS.strength,
+      { id:"str", name:"STRENGTH", tag:"Tempo Bench + Strict Press", duration:"~30 min", color:COLORS.strength, note:"WEEK 5 PEAK UPPER — Bench target 87.5% = 70kg, Press target 85% = 60kg. Tempo 3030 invariato. Volume ridotto, intensità massima del ciclo.",
         exercises: [
-          { id:"m0", name:"Warm-up bench", detail:"Vuoto x8 → 40kg x5 → 50kg x3 → 55kg x2. ~5 min." },
-          { id:"m1", name:"Bench Set 1 — 5 reps @75%", detail:"60 kg. Tempo 3030. Rest 2:00.", loggable:true, logFields:["peso","reps"] },
-          { id:"m2", name:"Bench Set 2 — 4 reps @80%", detail:"64 kg. Tempo 3030. Rest 2:00.", loggable:true, logFields:["peso","reps"] },
-          { id:"m3", name:"Bench Set 3-4 — 2-3 reps @82.5-85%", detail:"66-68 kg. Tempo 3030. Rest 2:00.", loggable:true, logFields:["peso","reps"] },
-          { id:"m4", name:"Strict Press Set 1 — 5 @70%", detail:"49 kg. Rest 2:00.", loggable:true, logFields:["peso","reps"] },
-          { id:"m5", name:"Strict Press Set 2 — 4 @75%", detail:"52 kg. Rest 2:00.", loggable:true, logFields:["peso","reps"] },
-          { id:"m6", name:"Strict Press Set 3 — 3 @80%", detail:"56 kg.", loggable:true, logFields:["peso","reps"] },
+          { id:"m0", name:"Warm-up bench", detail:"Vuoto x8 → 40kg x5 → 52kg x3 → 60kg x2 → 64kg x1. ~6 min. Primer @80% prima dei lavori." },
+          { id:"m1", name:"Bench Set 1 — 4 reps @80%", detail:"64 kg. Tempo 3030. Rest 2:30.", loggable:true, logFields:["peso","reps"] },
+          { id:"m2", name:"Bench Set 2 — 3 reps @82.5%", detail:"66 kg. Tempo 3030. Rest 2:30.", loggable:true, logFields:["peso","reps"] },
+          { id:"m3", name:"Bench Set 3-4 — 2-3 reps @87.5% · PEAK", detail:"70 kg. Tempo 3030. Rest 3:00. PEAK BENCH del ciclo — mantieni il tempo anche sotto fatica.", loggable:true, logFields:["peso","reps"] },
+          { id:"m4", name:"Strict Press Set 1 — 4 @77.5%", detail:"54 kg. Rest 2:30. Bracing attivo prima di ogni rep.", loggable:true, logFields:["peso","reps"] },
+          { id:"m5", name:"Strict Press Set 2 — 3 @82.5%", detail:"58 kg. Rest 2:30.", loggable:true, logFields:["peso","reps"] },
+          { id:"m6", name:"Strict Press Set 3 — 2 @85% · PEAK", detail:"60 kg. PEAK SET. Se esci pulito, log per prossimo ciclo: 62 kg.", loggable:true, logFields:["peso","reps"] },
         ]
       },
       { id:"cond", name:"CONDITIONING", tag:"21 min AMRAP", duration:"~21 min", color:COLORS.conditioning,
         exercises: [
-          { id:"c1", name:"21:00 AMRAP", detail:"15 Burpees Box Jump Overs @60cm + 20/15 cal Air Bike (RPM 65-75) + 30m Dual KB Farmer Carry @32kg. Target: 6-7 round. Scaling: altezza box 50cm o KB 24kg.", loggable:true, logFields:["round","note"] },
+          { id:"c1", name:"21:00 AMRAP — Peak", detail:"15 Burpees Box Jump Overs @60cm + 20/15 cal Air Bike (RPM 65-75) + 30m Dual KB Farmer Carry @32kg. Target: 7-8 round — peak week, readiness alta. No scaling se la settimana ha filato. Scaling: box 50cm o KB 24kg solo se necessario.", loggable:true, logFields:["round","note"] },
         ]
       },
       { id:"fs", name:"FUNCTIONAL STRENGTH", tag:"Spinta + Deltoidi", duration:"~12 min", color:COLORS.fs,
@@ -227,20 +227,20 @@ const DAYS = [
           { id:"s2", name:"HS Walk progression", detail:"5 min. Segui progressione settimanale.", loggable:true, logFields:["distanza"] },
         ]
       },
-      { id:"wl", name:"WEIGHTLIFTING", tag:"C&J Complex", duration:"~40 min", color:COLORS.weightlifting, note:"Sessione dedicata al miglioramento tecnico, esplosività e ripristino posizioni.",
+      { id:"wl", name:"WEIGHTLIFTING", tag:"C&J Complex", duration:"~40 min", color:COLORS.weightlifting, note:"WEEK 5 PEAK C&J — Target 82% = 57kg. Focus: velocità del catch, stabilità split jerk, ampiezza del jerk. L'ampiezza vale più del carico — non sacrificarla.",
         exercises: [
           { id:"w0", name:"Warm-up bilanciere vuoto — 2 round", detail:"3 Push press in split (o push press) + 3 Split jerk / power jerk + 3 Hang shoulder pull + 3 Hang high pull + 3 Low hang squat clean. ~8 min." },
           { id:"w1", name:"Complex A: Clean Pull + Hang SQ Clean + Front SQ + Push Jerk", detail:"1+1+1+1 dal 40% al 60% 1RM PWCL+PJ (28-42kg) x 5 set. Rest 1:30-2:00. ~15 min." },
-          { id:"w2", name:"Complex B Set 1 — PC + PJ + Split Jerk", detail:"2+1+1 @65% = 45kg", loggable:true, logFields:["peso","note"] },
-          { id:"w3", name:"Complex B Set 2", detail:"1+2+1 @70% = 49kg", loggable:true, logFields:["peso","note"] },
-          { id:"w4", name:"Complex B Set 3", detail:"1+1+1 @75% = 52kg", loggable:true, logFields:["peso","note"] },
-          { id:"w5", name:"Complex B Set 4", detail:"1+1+1 @75% = 52kg", loggable:true, logFields:["peso","note"] },
-          { id:"w6", name:"Complex B Set 5", detail:"1+1+1 @75% = 52kg. Rest as needed. Non salire se perdi posizione.", loggable:true, logFields:["peso","note"] },
+          { id:"w2", name:"Complex B Set 1 — PC + PJ + Split Jerk", detail:"2+1+1 @70% = 49kg. Rest 1:30.", loggable:true, logFields:["peso","note"] },
+          { id:"w3", name:"Complex B Set 2", detail:"1+2+1 @75% = 52kg. Rest 1:30.", loggable:true, logFields:["peso","note"] },
+          { id:"w4", name:"Complex B Set 3", detail:"1+1+1 @78% = 55kg. Rest 2:00.", loggable:true, logFields:["peso","note"] },
+          { id:"w5", name:"Complex B Set 4", detail:"1+1+1 @80% = 56kg. Rest 2:00.", loggable:true, logFields:["peso","note"] },
+          { id:"w6", name:"Complex B Set 5 · PEAK", detail:"1+1+1 @82% = 57kg. Solo se split jerk a 56kg era stabile. Rest as needed.", loggable:true, logFields:["peso","note"] },
         ]
       },
       { id:"cond", name:"CONDITIONING", tag:"5:00 on / 2:30 off", duration:"~23 min", color:COLORS.conditioning,
         exercises: [
-          { id:"c1", name:"3 interval: 5:00 on / 2:30 off", detail:"AMRAP per intervallo: 5 Dual DB Devil Press @22.5/15kg + 10 Dual DB Thruster @22.5/15kg + 5 Bar Muscle Ups (scala: 3 BMU, o C2B x2-3, o Pull Ups x3) + 30 Double Unders (o max attempts, o Single Unders). Riprendi da dove interrompi. Target: 2 round per intervallo.", loggable:true, logFields:["round","note"] },
+          { id:"c1", name:"3 interval: 5:00 on / 2:30 off — Peak", detail:"AMRAP per intervallo: 5 Dual DB Devil Press @22.5/15kg + 10 Dual DB Thruster @22.5/15kg + 5 Bar Muscle Ups (scala: 3 BMU o C2B x3) + 30 Double Unders. Riprendi da dove interrompi. Target: 2+ round per intervallo — peak week, push sui DB. Rest 2:30 tra intervalli: rispettalo.", loggable:true, logFields:["round","note"] },
         ]
       },
       { id:"fs", name:"FUNCTIONAL STRENGTH", tag:"Trazione + Braccia", duration:"~12 min", color:COLORS.fs,
@@ -260,7 +260,7 @@ const DAYS = [
     ]
   },
   {
-    id: "sat", label: "SAB", title: "Recovery", subtitle: "Gymnastics + Aerobic (opzionale)", totalTime: "~65 min", note:"RPE 5 massimo. Se sei stanco, fai solo la Mini Routine e vai a casa. Il recupero è parte del programma.",
+    id: "sat", label: "SAB", title: "Test + Recovery", subtitle: "PR Skill + Aerobic Recovery", totalTime: "~65 min", note:"CHIUSURA WEEK 5 — Testa i PR di skill (HS Walk, DU). RPE 7 sulle skill, RPE 4-5 sul resto. Poi recupero completo domenica prima del deload (Week 6).",
     blocks: [
       { id:"ril", name:"RILASCIO MIOFASCIALE", tag:"Mini Routine", duration:"~25 min", color:COLORS.rilascio,
         exercises: [
@@ -271,16 +271,16 @@ const DAYS = [
       },
       { id:"gym", name:"GYMNASTICS", tag:"Practice libera", duration:"~20 min", color:COLORS.gymnastics, note:"Lavoro for quality, niente clock. Scegli 2-3:",
         exercises: [
-          { id:"g1", name:"HS walk practice libera", detail:"10-15 tentativi. Focus qualità, non distanza.", loggable:true, logFields:["distanza","note"] },
+          { id:"g1", name:"HS Walk — PR TEST", detail:"10-15 tentativi. Oggi push per distanza massima. Rest 90s tra tentativi. Log miglior distanza del ciclo.", loggable:true, logFields:["distanza","note"] },
           { id:"g2", name:"Ring Muscle Up tecnica", detail:"5x2-3 reps. Focus kip efficiente e transizione.", loggable:true, logFields:["reps"] },
           { id:"g3", name:"L-Sit hold", detail:"Accumula 1 min totale. Anche in set da 10-15s.", loggable:true, logFields:["tempo"] },
           { id:"g4", name:"Rope Climb legless", detail:"3 salite. Se non hai il legless, fai normali ma lento.", loggable:true, logFields:["reps"] },
-          { id:"g5", name:"DU practice libera", detail:"5 min. Sperimenta ritmi e velocità diverse.", loggable:true, logFields:["reps"] },
+          { id:"g5", name:"DU — Max Unbroken PR TEST", detail:"3-5 tentativi max unbroken. Rest 2:00 tra tentativi. Log PR del ciclo — questo è il test finale delle 5 settimane.", loggable:true, logFields:["reps"] },
         ]
       },
       { id:"aer", name:"ENDURANCE", tag:"Recovery Z1", duration:"~20 min", color:COLORS.endurance, note:"Scegli UNA opzione. Tutto nasale, RPE 5 max.",
         exercises: [
-          { id:"a1", name:"5000m Rower @2:10-2:15/500m", detail:"Z1. SPM 18-20. Nasale. Puro recovery." },
+          { id:"a1", name:"5000m Rower — Pace Check", detail:"@2:05-2:10/500m. Fine peak week: cuore adattato, dovresti reggere un passo leggermente più veloce del normale. Log split/500m medio e FC finale." },
           { id:"a2", name:"30 min AirBike @12-15 cal/min", detail:"Z1. RPM 50-55. Nasale." },
           { id:"a3", name:"20 min nuoto a mare", detail:"Crawl facile. Quando disponibile (più in là nella stagione)." },
         ]
@@ -365,7 +365,7 @@ export default function App() {
     <div style={{ minHeight:"100vh", background:DARK, color:TEXT, fontFamily:"system-ui,-apple-system,sans-serif", maxWidth:480, margin:"0 auto" }}>
       {/* HEADER */}
       <div style={{ padding:"16px 14px 6px", borderBottom:`1px solid ${BORDER}` }}>
-        <div style={{ fontSize:10, color:G, fontWeight:700, letterSpacing:2.5, fontFamily:"'Fira Code',monospace" }}>FASE 1 — FOUNDATION</div>
+        <div style={{ fontSize:10, color:G, fontWeight:700, letterSpacing:2.5, fontFamily:"'Fira Code',monospace" }}>FASE 1 — WEEK 5 · PEAK</div>
         {/* Week selector */}
         <div style={{ display:"flex", alignItems:"center", justifyContent:"center", gap:14, padding:"10px 0" }}>
           <button onClick={()=>setWeek(w=>Math.max(1,w-1))} disabled={week===1} style={{ background:"none", border:`1px solid ${BORDER}`, borderRadius:6, color:week===1?"#333":"#888", padding:"5px 12px", cursor:week===1?"default":"pointer", fontSize:15 }}>←</button>
